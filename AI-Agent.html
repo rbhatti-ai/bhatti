@@ -3,27 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Agent Centered</title>
-  <style>
-    .centered-agent-widget {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-    }
-    /* Hide ElevenLabs default floating button */
-    elevenlabs-convai {
-      bottom: unset !important;
-      right: unset !important;
-    }
-  </style>
+  <title>Welcome to My AI Agent</title>
 </head>
 <body>
-  <h1 style="text-align:center;">Agent Page</h1>
-  <div class="centered-agent-widget">
-    <elevenlabs-convai agent-id="agent_1301kacqfhgjftpaan3a91vxm8kk"></elevenlabs-convai>
-  </div>
+  <h1 style="text-align:center;">Welcome to My AI Agent Page</h1>
+  <p style="text-align:center; font-size:1.2em; margin-top:30px;">
+    Talk to the AI agent using the chat bubble at the <strong>bottom right</strong> of this page.<br>
+    Type, speak, or ask questions—your assistant is ready!
+  </p>
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  <elevenlabs-convai agent-id="agent_1301kacqfhgjftpaan3a91vxm8kk"></elevenlabs-convai>
 </body>
 </html>
