@@ -4,65 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Welcome to My AI Agent</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,400|Lobster|Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster:400|Montserrat:700,400|Roboto:400,700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #dbeafe, #e0e7ff 80%);
+      min-height: 100vh;
+      background: linear-gradient(120deg, #F0F3FF 0%, #e0e7ff 80%, #c7d2fe 100%);
       font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 32px 24px;
-      background: rgba(255,255,255,0.95);
-      border-radius: 24px;
-      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
-      text-align: center;
+    .header {
+      width: 100%;
+      padding: 48px 0 18px;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .profile-img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #6366f1;
+      border: 6px solid #6366f1;
+      box-shadow: 0 4px 20px #6366f133;
       margin-bottom: 16px;
-      box-shadow: 0 2px 12px #6366f188;
     }
-    h1 {
+    .headline {
       font-family: 'Lobster', cursive;
-      font-size: 2.6em;
-      color: #3730a3;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      color: #4338ca;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      text-align: center;
     }
-    .welcome {
-      font-size: 1.3em;
-      color: #2d3748;
+    .subtitle {
       font-family: 'Montserrat', sans-serif;
-      margin-bottom: 18px;
+      font-size: 1.35em;
+      color: #312e81;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 44px;
     }
-    .instruction {
-      font-size: 1.1em;
-      color: #5b21b6;
-      margin-bottom: 22px;
+    .content {
+      background: rgba(255,255,255,0.86);
+      border-radius: 22px;
+      box-shadow: 0 2px 18px #6366f133;
+      margin: 0 auto 32px auto;
+      max-width: 580px;
+      width: 90%;
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .instructions {
+      font-size: 1.17em;
+      color: #4f46e5;
+      margin-bottom: 18px;
+      text-align: center;
+      line-height: 1.6;
+      font-family: 'Montserrat', sans-serif;
     }
     .footer {
-      font-size: 0.9em;
+      font-size: 0.98em;
       color: #64748b;
       text-align: center;
-      margin-top: 24px;
+      margin-bottom: 20px;
+      margin-top: 16px;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 630px) {
+      .profile-img { width:120px; height:120px; }
+      .headline { font-size:2em;}
+      .subtitle { font-size:1em;}
+      .content { padding:18px 8px;}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="Self.jpg" alt="Profile Image" class="profile-img">
-    <h1>Welcome to My AI Agent Page!</h1>
-    <div class="welcome">Your smart assistant is ready to help you.</div>
-    <div class="instruction">
-      Use the <strong>chat bubble</strong> at the <strong>bottom right</strong> of this page to type or speak your question.<br>
-      Ask about supply chain, logistics, Punjabi language, or just say hello!
+  <div class="header">
+    <img src="Self.jpg" alt="Profile Image" class="profile-img" />
+    <div class="headline">Welcome to My AI Agent Page!</div>
+    <div class="subtitle">Your smart assistant is here to help.</div>
+  </div>
+  <div class="content">
+    <div class="instructions">
+      Please use the <strong>chat bubble</strong> at the <strong>bottom right</strong> to start a conversation with your AI Agent.<br>
+      You can <span style="color:#16a34a; font-weight:700;">type</span>, <span style="color:#0284c7; font-weight:700;">speak</span>, or <span style="color:#f59e42; font-weight:700;">ask questions</span> about supply chain, logistics, Punjabi language, or anything you wish.
+    </div>
+    <div class="instructions" style="font-size:1em; color:#312e81;">
+      Your privacy is respected. Interactions are private and secure.
     </div>
   </div>
   <div class="footer">
